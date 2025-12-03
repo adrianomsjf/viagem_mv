@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -34,8 +33,9 @@
         header {
             text-align: center;
             margin-bottom: 50px;
-            padding: 60px 20px;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1518182170546-0766be6f5a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            padding: 80px 20px;
+            /* AQUI ESTÁ A IMAGEM 1.jpg */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('1.jpg') no-repeat center center/cover;
             color: white;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -49,9 +49,10 @@
         }
 
         header p {
-            font-size: 1.2em;
+            font-size: 1.4em;
             font-weight: 300;
             margin-top: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
         }
 
         .intro {
@@ -85,13 +86,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5em;
+            font-size: 1.2em;
+            font-weight: bold;
             margin-right: 15px;
         }
 
         .timeline {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 colunas por padrão */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
             gap: 30px;
         }
 
@@ -105,6 +107,7 @@
             border: 1px solid #eee;
             display: flex;
             flex-direction: column;
+            height: 100%;
         }
 
         .card:hover {
@@ -113,9 +116,11 @@
         }
 
         .card-image {
-            height: 200px;
+            height: 220px;
             width: 100%;
-            object-fit: cover;
+            object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+            object-position: center;
+            background-color: #ddd; /* Cor de fundo caso a imagem falhe */
         }
 
         .card-content {
@@ -181,7 +186,7 @@
         /* Ajustes para Impressão */
         @media print {
             body { padding: 0; background-color: white; }
-            header { background-image: none !important; background-color: var(--primary-color) !important; color: white !important; margin-bottom: 20px; box-shadow: none; }
+            header { background-image: none !important; background-color: var(--primary-color) !important; color: white !important; margin-bottom: 20px; box-shadow: none; padding: 20px; }
             .timeline { grid-template-columns: 1fr 1fr; gap: 20px; }
             .card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
             .btn-link { border: 1px solid #333; color: #333; }
@@ -209,7 +214,7 @@
         </div>
         <div class="timeline">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boteco do Lago" class="card-image">
+                <img src="2.jpg" alt="Boteco do Lago" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">12:00</span>
                     <h3>Almoço: Boteco do Lago</h3>
@@ -218,7 +223,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1444211353227-635db792064b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Trilha Pinheiro Velho" class="card-image">
+                <img src="3.jpg" alt="Trilha Pinheiro Velho" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">14:30</span>
                     <h3>Trilha do Pinheiro Velho</h3>
@@ -227,7 +232,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1626202157145-6f685fa69213?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chocolate Gressoney" class="card-image">
+                <img src="4.jpg" alt="Chocolate Gressoney" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">15:30</span>
                     <h3>Fábrica de Chocolates Gressoney</h3>
@@ -236,7 +241,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1612676100904-4340d89053c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pôr do Sol" class="card-image">
+                <img src="5.jpg" alt="Pôr do Sol" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">16:45</span>
                     <h3>Pôr do Sol no Mirante do Aeroporto</h3>
@@ -244,8 +249,8 @@
                     <a href="https://www.instagram.com/mirantedoaeroporto/" target="_blank" class="btn-link">Ver Fotos</a>
                 </div>
             </div>
-             <div class="card" style="grid-column: 1 / -1;">
-                <img src="https://images.unsplash.com/photo-1518659178358-15c0d12e4f04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Fondue" class="card-image" style="height: 250px;">
+            <div class="card" style="grid-column: 1 / -1;">
+                <img src="6.jpg" alt="Fondue" class="card-image" style="height: 300px; object-position: bottom;">
                 <div class="card-content">
                     <span class="time-badge">20:30</span>
                     <h3>Jantar Especial: Casa do Fondue</h3>
@@ -263,7 +268,7 @@
         </div>
         <div class="timeline">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pedra Redonda" class="card-image">
+                <img src="7.jpg" alt="Pedra Redonda" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">09:00</span>
                     <h3>Trilha da Pedra Redonda</h3>
@@ -272,7 +277,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1606757368568-d05e2621740f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cerveja Artesanal" class="card-image">
+                <img src="8.jpg" alt="Cerveja Artesanal" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">12:30</span>
                     <h3>Almoço na Cervejaria Fritz</h3>
@@ -281,7 +286,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1596395817297-a7ebf4728551?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Parque Oschin" class="card-image">
+                <img src="9.jpg" alt="Parque Oschin" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">14:30</span>
                     <h3>Relax no Parque Oschin</h3>
@@ -290,7 +295,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1599789197514-47270cd526b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Strudel" class="card-image">
+                <img src="10.jpg" alt="Strudel" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">17:00</span>
                     <h3>Café na Casa do Strudel</h3>
@@ -299,7 +304,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wine Not Bar" class="card-image">
+                <img src="11.jpg" alt="Wine Not Bar" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">19:30</span>
                     <h3>Happy Hour: Wine Not? Wine Bar</h3>
@@ -308,7 +313,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cantina Italiana" class="card-image">
+                <img src="12.jpg" alt="Cantina Italiana" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">21:30</span>
                     <h3>Jantar na Cantina Portale di Napoli</h3>
@@ -326,7 +331,7 @@
         </div>
         <div class="timeline">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1504006833117-8886a36e6bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Esquilo" class="card-image">
+                <img src="13.jpg" alt="Esquilo" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">09:30</span>
                     <h3>Shopping Celeiro + Esquilos</h3>
@@ -335,7 +340,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1566630386125-5460515b6994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Orquídeas" class="card-image">
+                <img src="14.jpg" alt="Orquídeas" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">10:30</span>
                     <h3>Orquidário MV</h3>
@@ -344,24 +349,33 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1628109312122-f9b691238936?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cachaça" class="card-image">
+                <img src="15.jpg" alt="Cachaça" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">11:30</span>
                     <h3>Destilaria Monte Verde</h3>
-                    <p>Última parada! Conheça os alambiques e garanta uma cachaça artesanal premium para levar para casa.</p>
+                    <p>Pausa para conhecer os alambiques e garanta uma cachaça artesanal premium para levar para casa.</p>
                     <a href="https://www.instagram.com/destilariamonteverde/" target="_blank" class="btn-link">Ver Instagram</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="16.jpg" alt="Villa Amarela" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">13:00</span>
+                    <h3>Almoço: Villa Amarela</h3>
+                    <p>Encerre a viagem com chave de ouro! Famoso pelo "Melhor Leitão à Pururuca do Brasil" e autêntica comida mineira.</p>
+                    <a href="https://www.instagram.com/villaamarelaboteco/" target="_blank" class="btn-link">Ver Instagram</a>
                 </div>
             </div>
         </div>
         
         <div style="margin-top: 40px; text-align: center; padding: 20px; background-color: #e8f5e9; border-radius: 10px; color: var(--primary-color);">
             <h3>🌲 Boa Viagem!</h3>
-            <p>Roteiro finalizado às 12:30. Hora de pegar a estrada.</p>
+            <p>Roteiro finalizado às 15:00. Hora de pegar a estrada.</p>
         </div>
     </section>
 
     <footer>
-        <p>Este roteiro personalizado contém links diretos para as atrações. Verifique a necessidade de reservas antecipadas.</p>
+        <p>Este roteiro personalizado contém sugestões baseadas no melhor de Monte Verde.</p>
     </footer>
 
 </body>
