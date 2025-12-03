@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiro Monte Verde - Casal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;800&display=swap');
+
+        :root {
+            --primary-color: #2c5e2e; /* Verde Serra */
+            --secondary-color: #8d6e63; /* Marrom Madeira */
+            --bg-color: #f4f1ea; /* Creme claro */
+            --text-color: #333;
+            --card-bg: #fff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: linear-gradient(rgba(44, 94, 46, 0.7), rgba(44, 94, 46, 0.7)), url('https://source.unsplash.com/1600x900/?mountain,village,cozy') no-repeat center center/cover;
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .intro-text {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            font-size: 1.1em;
+        }
+
+        .day-section {
+            margin-bottom: 50px;
+        }
+
+        .day-title {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            position: relative;
+        }
+
+        .time-badge {
+            background-color: var(--secondary-color);
+            color: white;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.3em;
+        }
+
+        .card p {
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        .info-link {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            border-bottom: 2px solid var(--secondary-color);
+            transition: all 0.3s;
+        }
+
+        .info-link:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2px 5px;
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #ddd;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            header {
+                background: none !important;
+                color: var(--primary-color);
+                padding: 20px 0;
+                box-shadow: none;
+            }
+            header h1 {
+                color: var(--primary-color);
+                text-shadow: none;
+            }
+            .card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                break-inside: avoid;
+            }
+            .info-link {
+                border-bottom: 1px solid #ccc;
+            }
+            /* Garante que as imagens e cores de fundo apareçam na impressão */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Roteiro Romântico em Monte Verde</h1>
+        <p>Sexta a Domingo | Natureza, Charme e Gastronomia</p>
+    </header>
+
+    <div class="intro-text">
+        <p>Um guia personalizado para um fim de semana tranquilo, focado em experiências aconchegantes, boa comida e paisagens deslumbrantes, sem radicalismos.</p>
+    </div>
+
+    <section class="day-section">
+        <h2 class="day-title">📅 Sexta-feira: Chegada e Charme</h2>
+        <div class="timeline">
+            <div class="card">
+                <img src="https://source.unsplash.com/600x400/?restaurant,deck,lake" alt="Boteco do Lago" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">12:00</div>
+                    <h3>Almoço no Boteco do Lago</h3>
+                    <p>Início relaxante no deck com vista para o lago, música ambiente e petiscos brasileiros para entrar no clima.</p>
+                    <a href="https://www.instagram.com/botecodolago" target="_blank" class="info-link">Mais Informações</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/600x400/?forest,path,ancient,tree" alt="Trilha Pinheiro Velho" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">14:30</div>
+                    <h3>Trilha do Pinheiro Velho & Chocolate</h3>
+                    <p>Caminhada plana e fácil no centro até a araucária de 500 anos, seguida de sobremesa na Fábrica Gressoney.</p>
+                    <a href="https://monteverde.org.br/trilha-do-pinheiro-velho/" target="_blank" class="info-link">Guia da Trilha</a>
+                </div>
+            </div>
+             <div class="card">
+                <img src="https://source.unsplash.com/600x400/?mountain,sunset,view" alt="Mirante do Aeroporto" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">16:30</div>
+                    <h3>Pôr do Sol no Mirante do Aeroporto</h3>
+                    <p>Acesso fácil de carro ao aeroporto mais alto do Brasil para uma vista espetacular do fim de tarde.</p>
+                    <span class="info-link" style="border-bottom: none; cursor: default;">Acesso pela Av. Sol Nascente</span>
+                </div>
+            </div>
+             <div class="card">
+                <img src="https://source.unsplash.com/600x400/?fondue,wine,cozy,dinner" alt="Mont Vert Fondue" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">20:00</div>
+                    <h3>Jantar: Fondue no Mont Vert</h3>
+                    <p>A experiência gastronômica clássica da serra. Ambiente romântico e excelente carta de vinhos. (Reserve antes).</p>
+                    <a href="https://www.montvert.com.br" target="_blank" class="info-link">Fazer Reserva</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="day-section" style="page-break-before: always;">
+        <h2 class="day-title">📅 Sábado: Natureza e Agito Noturno</h2>
+        <div class="timeline">
+            <div class="card">
+                <img src="https://source.unsplash.com/600x400/?mountain,peak,hike,view" alt="Pedra Redonda" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">09:00</div>
+                    <h3>Trilha da Pedra Redonda</h3>
+                    <p>O cartão-postal. Suba cedo para evitar filas e ter a vista 360º das montanhas. Nível moderado.</p>
+                    <a href="https://www.melhoresdestinos.com.br/o-que-fazer-em-monte-verde.html" target="_blank" class="info-link">Guia do Passeio</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/600x400/?german,food,beer,brewery" alt="Cervejaria Fritz" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">12:30</div>
+                    <h3>Almoço na Cervejaria Fritz</h3>
+                    <p>Reponha as energias com comida alemã autêntica (joelho de porco, salsichas) e chopp artesanal local.</p>
+                    <a href="http://www.fritzcervejariaartesanal.com.br" target="_blank" class="info-link">Site Oficial</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/600x400/?park,araucaria,nature,llama" alt="Parque Oschin" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">14:30</div>
+                    <h3>Relax no Parque Oschin</h3>
+                    <p>Tarde tranquila caminhando entre araucárias gigantes, lhamas e lagos neste parque privado belíssimo.</p>
+                    <a href="https://www.instagram.com/parqueoschin" target="_blank" class="info-link">Ver Fotos</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/600x400/?apple,strudel,coffee,cafe" alt="Casa do Strudel" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">17:00</div>
+                    <h3>Café na Casa do Strudel</h3>
+                    <p>A parada perfeita para o café da tarde, provando a famosa sobremesa austríaca de maçã com chantilly.</p>
+                    <span class="info-link" style="border-bottom: none; cursor: default;">Av. Monte Verde, 1095</span>
+                </div>
+            </div>
+             <div class="card">
+                <img src="https://source.unsplash.com/600x400/?ice,bar,drinks,cold" alt="Ice Bar" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">19:30</div>
+                    <h3>Experiência no Ice Bar</h3>
+                    <p>Uma visita rápida e divertida ao bar feito de gelo com drinks e esculturas (casacos fornecidos).</p>
+                    <a href="https://www.facebook.com/icebarmonteverde/" target="_blank" class="info-link">Mais Informações</a>
+                </div>
+            </div>
+             <div class="card">
+                <img src="https://source.unsplash.com/600x400/?italian,restaurant,cozy,dinner" alt="Cantina Portale di Napoli" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">21:30</div>
+                    <h3>Jantar na Cantina Portale di Napoli</h3>
+                    <p>Feche a noite após caminhar na avenida iluminada. Famosa pelo polpettone e ambiente acolhedor.</p>
+                    <a href="https://www.instagram.com/portaledinapoli" target="_blank" class="info-link">Ver Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="day-section" style="page-break-before: always;">
+        <h2 class="day-title">📅 Domingo: Arte e Cultura Local</h2>
+        <div class="timeline">
+            <div class="card">
+                <img src="https://source.unsplash.com/600x400/?pottery,garden,sculpture,art" alt="Unger's Pottery House" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">09:30</div>
+                    <h3>Unger’s Pottery House</h3>
+                    <p>Manhã inspiradora em uma galeria de arte a céu aberto com jardins incríveis e cerâmica contemporânea.</p>
+                    <a href="https://www.paulaunger.com.br/galeria" target="_blank" class="info-link">Site da Galeria</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/600x400/?distillery,copper,barrels,liquor" alt="Destilaria Monte Verde" class="card-image">
+                <div class="card-content">
+                    <div class="time-badge">11:00</div>
+                    <h3>Destilaria Monte Verde</h3>
+                    <p>Visita rápida para conhecer a produção de cachaça artesanal e garantir um souvenir líquido da viagem.</p>
+                    <a href="https://www.facebook.com/cachacamonteverde/" target="_blank" class="info-link">Mais Informações</a>
+                </div>
+            </div>
+             <div class="card" style="background-color: #e8f5e9; border: none;">
+                <div class="card-content" style="text-align: center; padding: 40px;">
+                    <div class="time-badge" style="background-color: var(--primary-color);">12:00</div>
+                    <h3 style="color: var(--primary-color);">Fim do Roteiro</h3>
+                    <p>Check-out e retorno. Boa viagem!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Roteiro gerado por Inteligência Artificial. Verifique horários de funcionamento e necessidade de reservas antes da viagem.</p>
+    </footer>
+
+</body>
+</html>
