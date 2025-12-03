@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,8 +10,8 @@
 
         :root {
             --primary-color: #2c5e2e; /* Verde Serra */
-            --secondary-color: #a67c52; /* Marrom Madeira */
-            --bg-color: #fcfbf9; /* Branco Off-white */
+            --secondary-color: #8d6e63; /* Marrom Madeira */
+            --bg-color: #f9f7f2; /* Creme suave */
             --text-color: #333;
             --card-bg: #fff;
         }
@@ -33,26 +34,24 @@
         header {
             text-align: center;
             margin-bottom: 50px;
-            padding: 80px 20px;
-            /* Foto de capa garantida: Montanhas */
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1518182170546-0766be6f5a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
             color: white;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
         header h1 {
             color: white;
             font-size: 3em;
             margin: 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
         }
 
         header p {
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: 300;
             margin-top: 10px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
 
         .intro {
@@ -61,10 +60,6 @@
             margin: 0 auto 50px auto;
             font-size: 1.1em;
             color: #555;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         /* Estrutura do Roteiro */
@@ -90,14 +85,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2em;
-            font-weight: bold;
+            font-size: 1.5em;
             margin-right: 15px;
         }
 
         .timeline {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas por padrão */
             gap: 30px;
         }
 
@@ -147,7 +141,6 @@
         .card h3 {
             margin: 0 0 10px 0;
             font-size: 1.4em;
-            line-height: 1.2;
         }
 
         .card p {
@@ -193,6 +186,7 @@
             .card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
             .btn-link { border: 1px solid #333; color: #333; }
             a { text-decoration: none; color: black; }
+            /* Forçar impressão de background */
             * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
         }
     </style>
@@ -200,67 +194,175 @@
 <body>
 
     <header>
-        <h1>Monte Verde: Roteiro Romântico</h1>
-        <p>Natureza, Charme e Gastronomia na Serra</p>
+        <h1>Monte Verde para Casais</h1>
+        <p>Roteiro de Sexta a Domingo | Natureza, Vinhos e Charme</p>
     </header>
 
     <div class="intro">
-        <p>Um guia exclusivo para aproveitar o melhor de Monte Verde, combinando passeios relaxantes e experiências gastronômicas inesquecíveis.</p>
+        <p>Este guia foi desenhado para proporcionar um fim de semana inesquecível, equilibrando a tranquilidade das montanhas com a sofisticação da gastronomia local.</p>
     </div>
 
     <section class="day-section">
         <div class="day-header">
             <div class="day-icon">SEX</div>
-            <h2>Chegada e Clima de Serra</h2>
+            <h2>Chegada, Lago e Fondue</h2>
         </div>
         <div class="timeline">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1576756209575-d227f4c54019?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boteco do Lago" class="card-image">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boteco do Lago" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">12:00</span>
                     <h3>Almoço: Boteco do Lago</h3>
-                    <p>Comece a viagem almoçando no deck com vista para o lago. Ótima música ao vivo e petiscos.</p>
-                    <a href="https://www.tripadvisor.com.br/Restaurant_Review-g1065334-d3971131-Reviews-Boteco_do_Lago-Monte_Verde_State_of_Minas_Gerais.html" target="_blank" class="btn-link">Mais Informações</a>
+                    <p>Comece a viagem almoçando no deck com vista para o lago. Ótima música ao vivo e petiscos brasileiros.</p>
+                    <a href="https://www.tripadvisor.com.br/Restaurant_Review-g1065334-d3971131-Reviews-Boteco_do_Lago-Monte_Verde_State_of_Minas_Gerais.html" target="_blank" class="btn-link">Ver no TripAdvisor</a>
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Trilha Pinheiro Velho" class="card-image">
+                <img src="https://images.unsplash.com/photo-1444211353227-635db792064b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Trilha Pinheiro Velho" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">14:30</span>
                     <h3>Trilha do Pinheiro Velho</h3>
-                    <p>Caminhada leve e plana no centro para conhecer a araucária de 500 anos.</p>
+                    <p>Uma caminhada leve e plana no centro para conhecer a araucária de 500 anos e respirar o ar puro.</p>
                     <a href="https://monteverde.org.br/trilha-do-pinheiro-velho/" target="_blank" class="btn-link">Mais Informações</a>
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chocolate Gressoney" class="card-image">
+                <img src="https://images.unsplash.com/photo-1626202157145-6f685fa69213?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chocolate Gressoney" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">15:30</span>
                     <h3>Fábrica de Chocolates Gressoney</h3>
-                    <p>Prove a "Prímula" e veja a produção de chocolate artesanal.</p>
+                    <p>Parada estratégica após a trilha para provar a "Prímula" e ver a produção de chocolate artesanal.</p>
                     <a href="https://www.instagram.com/gressoneymv/?hl=pt-br" target="_blank" class="btn-link">Ver Instagram</a>
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1610492318721-e372579b1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pôr do Sol" class="card-image">
+                <img src="https://images.unsplash.com/photo-1612676100904-4340d89053c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pôr do Sol" class="card-image">
                 <div class="card-content">
                     <span class="time-badge">16:45</span>
                     <h3>Pôr do Sol no Mirante do Aeroporto</h3>
-                    <p>O aeroporto mais alto do Brasil com vista espetacular para o fim de tarde.</p>
-                    <a href="https://www.instagram.com/mirantedoaeroporto/" target="_blank" class="btn-link">Mais Informações</a>
+                    <p>O aeroporto mais alto do Brasil oferece uma vista limpa e espetacular para o fim de tarde.</p>
+                    <a href="https://www.instagram.com/mirantedoaeroporto/" target="_blank" class="btn-link">Ver Fotos</a>
                 </div>
             </div>
              <div class="card" style="grid-column: 1 / -1;">
-                <img src="https://images.unsplash.com/photo-1545659635-42358bc753a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Fondue" class="card-image" style="height: 250px;">
+                <img src="https://images.unsplash.com/photo-1518659178358-15c0d12e4f04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Fondue" class="card-image" style="height: 250px;">
                 <div class="card-content">
                     <span class="time-badge">20:30</span>
                     <h3>Jantar Especial: Casa do Fondue</h3>
                     <p>O clássico da serra. Uma experiência romântica à luz de velas com rodízio de queijos e carnes nobres.</p>
-                    <a href="https://www.casadofondue.com.br/" target="_blank" class="btn-link">Página do Restaurante</a>
+                    <a href="https://www.casadofondue.com.br/" target="_blank" class="btn-link">Fazer Reserva</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="day-section" style="page-break-before: always;">
-        <div class="day-
+        <div class="day-header">
+            <div class="day-icon">SÁB</div>
+            <h2>Montanhas, Natureza e Vinhos</h2>
+        </div>
+        <div class="timeline">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pedra Redonda" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">09:00</span>
+                    <h3>Trilha da Pedra Redonda</h3>
+                    <p>O passeio nº 1 de Monte Verde. Suba cedo para ter a vista 360º das montanhas com tranquilidade.</p>
+                    <a href="https://monteverde.org.br/trilha-pedra-redonda/" target="_blank" class="btn-link">Info da Trilha</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1606757368568-d05e2621740f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cerveja Artesanal" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">12:30</span>
+                    <h3>Almoço na Cervejaria Fritz</h3>
+                    <p>Recupere as energias com autêntica comida alemã (joelho de porco, salsichões) e chopp da casa.</p>
+                    <a href="https://www.instagram.com/fritz.monteverde/" target="_blank" class="btn-link">Ver Cardápio</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1596395817297-a7ebf4728551?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Parque Oschin" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">14:30</span>
+                    <h3>Relax no Parque Oschin</h3>
+                    <p>Uma tarde para caminhar entre lhamas, grutas e araucárias gigantes neste parque belíssimo.</p>
+                    <a href="https://parqueoschin.com.br/" target="_blank" class="btn-link">Site Oficial</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1599789197514-47270cd526b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Strudel" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">17:00</span>
+                    <h3>Café na Casa do Strudel</h3>
+                    <p>O melhor Apfelstrudel (torta de maçã) da cidade, servido quente com chantilly ou sorvete.</p>
+                    <a href="https://www.instagram.com/casadostrudel_monteverde/" target="_blank" class="btn-link">Ver Instagram</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wine Not Bar" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">19:30</span>
+                    <h3>Happy Hour: Wine Not? Wine Bar</h3>
+                    <p>Ambiente moderno e descolado. Perfeito para provar vinhos em taça e petiscar tábuas de frios.</p>
+                    <a href="https://www.tripadvisor.com.br/Restaurant_Review-g1056586-d17565785-Reviews-Wine_Not-Monte_Verde_Camanducaia_State_of_Minas_Gerais.html" target="_blank" class="btn-link">Ver Avaliações</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cantina Italiana" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">21:30</span>
+                    <h3>Jantar na Cantina Portale di Napoli</h3>
+                    <p>Encerre o dia com o famoso Polpettone em um ambiente acolhedor, decorado com garrafas suspensas.</p>
+                    <a href="https://www.instagram.com/cantinaportaledinapoli/" target="_blank" class="btn-link">Ver Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="day-section" style="page-break-before: always;">
+        <div class="day-header">
+            <div class="day-icon">DOM</div>
+            <h2>Esquilos, Orquídeas e Despedida</h2>
+        </div>
+        <div class="timeline">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504006833117-8886a36e6bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Esquilo" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">09:30</span>
+                    <h3>Shopping Celeiro + Esquilos</h3>
+                    <p>Visite a famosa "Vila dos Esquilos" nos fundos do shopping e aproveite para comprar lembrancinhas.</p>
+                    <a href="https://www.tripadvisor.com.br/Attraction_Review-g1056586-d4464166-Reviews-Shopping_Celeiro-Monte_Verde_Camanducaia_State_of_Minas_Gerais.html" target="_blank" class="btn-link">Localização</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1566630386125-5460515b6994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Orquídeas" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">10:30</span>
+                    <h3>Orquidário MV</h3>
+                    <p>Um passeio tranquilo pelas estufas, com plantas carnívoras e milhares de espécies de orquídeas raras.</p>
+                    <a href="https://orquidariomv.com.br/novo/" target="_blank" class="btn-link">Conhecer</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1628109312122-f9b691238936?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cachaça" class="card-image">
+                <div class="card-content">
+                    <span class="time-badge">11:30</span>
+                    <h3>Destilaria Monte Verde</h3>
+                    <p>Última parada! Conheça os alambiques e garanta uma cachaça artesanal premium para levar para casa.</p>
+                    <a href="https://www.instagram.com/destilariamonteverde/" target="_blank" class="btn-link">Ver Instagram</a>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px; text-align: center; padding: 20px; background-color: #e8f5e9; border-radius: 10px; color: var(--primary-color);">
+            <h3>🌲 Boa Viagem!</h3>
+            <p>Roteiro finalizado às 12:30. Hora de pegar a estrada.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Este roteiro personalizado contém links diretos para as atrações. Verifique a necessidade de reservas antecipadas.</p>
+    </footer>
+
+</body>
+</html>
